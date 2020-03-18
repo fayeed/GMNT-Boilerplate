@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "target": "es6" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019' or 'ESNEXT'. */,
+    "module": "commonjs" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
+    "lib": ["DOM", "ES6", "ES2017", "ESNext.AsyncIterable"],
+    "removeComments": true /* Do not emit comments to output. */,
+    "importHelpers": true /* Import emit helpers from 'tslib'. */,
+    "strict": true /* Enable all strict type-checking options. */,
+    "moduleResolution": "node" /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */,
+    "baseUrl": "./" /* Base directory to resolve non-absolute module names. */,
+    "typeRoots": [] /* List of folders to include type definitions from. */,
+    "types": [
+      "node"
+    ] /* Type declaration files to be included in compilation. */,
+    "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
+    "experimentalDecorators": true /* Enables experimental support for ES7 decorators. */,
+    "emitDecoratorMetadata": true /* Enables experimental support for emitting type metadata for decorators. */,
+    "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "strictPropertyInitialization": false
+  },
+  "include": ["./src/**/*.ts"],
+  "exclude": ["./src/public/"],
+  "rules": {
+    "max-line-length": {
+      "options": [100]
+    },
+    "member-ordering": false,
+    "no-consecutive-blank-lines": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "quotemark": [true, "single"],
+    "variable-name": [true, "allow-leading-underscore"]
+  }
+}
